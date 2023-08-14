@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="icon" href="img1.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTT</title>
+    <style>
+        nav{
+            height: 100px;
+            width: 100%;
+            background-color: rgba(226, 226, 226, 0.4);
+            backdrop-filter:blur(8px);
+            display: flex;
+            align-items: center;
+            position: fixed;
+            z-index: 100;
+            top: 0;
+        }
+        .nav_logo img{
+ height: 80px;
+ width:80px;
+ position: absolute;
+ top:17px;
+ left:20px
+        }
+        
+        .nav_items a{
+            text-decoration: none;
+            font-size: 20px;
+            /* padding: 15px 5px 0px 0px; */
+            margin-left: 100px;
+        }
+        .nav_items a:hover{
+            color:chartreuse;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        #carouselExampleAutoplaying img{
+ height: 500px;
+ margin-left: 70px;
+ margin-top: 100px;
+ /* width: 700px; */
+        }
+
+        #carouselExampleAutoplaying img:hover{
+          transition: all 1s ease;
+          animation: animi 1s ease ;
+          border-radius: 10px;
+        }
+        .carousel-inner{
+          width: 75%;
+          /* margin: 20px 0px 0px 60px; */
+          margin-left: 100px;
+        }
+
+        .carousel-control-prev-icon span{
+          margin: 0px 20px 0px 200px;
+        }
+        @keyframes animi{
+          from{
+            transform: scale(1.0);
+          }
+          to{
+            transform: scale(1.6);
+          }
+        } 
+        
+        .frequent img{
+            height: 200px;
+            width: 200px;
+            display: inline-block;
+            margin-top: 100px;
+            margin-left: 20px; 
+            border-radius: 10px;
+            /* padding-top: 50px; */
+
+            /* padding:15px,15px;            */
+            /* align-items: center;
+            justify-items: center; */
+        }
+        .frequent img:hover{
+          /* position: absolute; */
+          transition: all 3s ease;
+          animation: move 3s ease ;
+        }
+        @keyframes move{
+          from{
+            /* background-color: black; */
+            transform: scale(1.0);
+          }
+          to{
+            /* background-color: blue; */
+            transform: scale(1.3);
+          }
+        }
+        .recent img{
+          height:200px;
+          width:200px;
+          display: inline-block;
+          margin-top: 100px;
+          margin-left: 60px;
+          border-radius: 10px;
+          /* padding-top: 15px; */
+        }
+        .recent img:hover{
+          /* position: absolute; */
+          transition: all 3s ease;
+          animation: animi 3s ease ;
+        }
+        @keyframes animi{
+          from{
+            transform: translate(10px);
+          }
+          to{
+            transform: translate(30px);
+          }
+        }
+        h1{
+          text-align: center;
+          color:goldenrod;
+          margin-top: 20px;
+        }
+        body{
+          background-color: black;
+        }
+        .toprated img{
+          height: 200px;
+          width: 200px;
+          margin-top: 100px;
+          border-radius: 30px;
+          margin-left: 100px;
+        }
+        .toprated img:hover{
+          transition: all 3s ease;
+          animation: top 3s ease;
+        }
+        @keyframes top{
+          from{
+            transform: scale(1.0);
+          }
+          to{
+            transform: scale(0.5);
+          }
+        }
+        .fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  /* background: #3B5998; */
+  color: white;
+}
+
+.fa-twitter {
+  /* background: #55ACEE; */
+  color: white;
+}
+
+.fa-google {
+  /* background: #dd4b39; */
+  color: white;
+}
+#container{
+  margin-top: 400px;
+  margin-left: 190px;
+  height: 100px;
+  width: 1000px;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+
+}
+.company a{
+  height:90px;
+  width:200px;
+  color: chartreuse;
+  padding: 0px 0px 0px 20px;
+  margin-left: 10px;
+  display: block;
+}
+.view p{
+  height:90px;
+  width:200px;
+  color: darkorange;
+  padding: 10px 0px 0px 20px;
+  margin-left: 100px;
+}
+.need{
+  height:90px;
+  width:200px;
+  /* color: darkorange; */
+  padding: 10px 0px 0px 20px;
+  margin-left: 10px;
+}
+.need a{
+  text-decoration: none;
+  text-align: justify;
+}
+.connect{
+  height:90px;
+  width:200px;
+  /* color: darkorange; */
+  padding: 10px 0px 0px 20px;
+  margin-left: 10px;
+}
+
+    </style>
+</head>
+<body>
+    <nav>
+<div class="nav_logo">
+    <img src="navlogo.jpg" alt="" >
+</div>
+<div class="nav_items">
+    <a href="#carouselExampleAutoplaying">Home</a>
+    <a href="#watched" >Frequently Watched </a>
+    <a href=" #rec"> Recent</a>
+    <a href="#to"> Top Rated</a>
+    <a href=""> Favourites</a>
+    <a href=""> About</a>
+    <a href="signup.html"> Sign Up</a>
+    <a href="sign.html">sign In</a>
+    
+</div>
+    </nav>
+
+
+
+    <!-- this is home page -->
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1000">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="image10.jpeg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="image11.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="image12.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="image13.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="image14.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="image15.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+        <img src="image16.jpg" class="d-block w-100" alt="...">
+      </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<br><br>
+ <!-- here home  ends -->
+ <!-- frequently watched -->
+ <h1 id="watched">frequently watched</h1>
+ <div class="frequent">
+<img src="silde1.jpg" alt="">
+<img src="silde2.jpg" alt="">
+<img src="slide3.jpg" alt="">
+<img src="slide4.jpg" alt="">
+<img src="slide5.jpg" alt="">
+<img src="slide6.jpg" alt="">
+<br> <br>
+<img src="image10.jpeg" alt="">
+<img src="image11.jpg" alt="">
+<img src="image12.jpg" alt="">
+<img src="image14.jpg" alt="">
+<img src="image15.jpg" alt="">
+<img src="image16.jpg" alt="">
+
+ </div>
+ <br><br><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <!-- here frequently watched is over -->
+ <!-- now recent is starting -->
+ <h1> RECENT</h1>
+ <div id="rec" class="recent">
+  <img src="recent1.jpg" alt="">
+  <img src="recent2.jpg" alt="">
+  <img src="recent3.jpg" alt="">
+  <img src="recent4.jpg" alt="">
+  <img src="recent5.jpg" alt="">
+  <br><br>
+  <img src="recent6.jpg" alt="">
+  <img src="recent7.jpg" alt="">
+  <img src="recent8.jpg" alt="">
+  <img src="recent9.jpg" alt="">
+  <img src="recent10.jpg" alt=""></div>
+<!-- here recent is completed -->
+<!-- now top rated is starting -->
+<h1>TOP RATED</h1>
+<div class="toprated" id="to">
+<img src="recent11.jpg" alt="">
+<img src="recent12.jpg" alt="">
+<img src="recent13.jpg" alt="">
+<img src="recent14.jpg" alt="">
+<br><br>
+<img src="recent15.jpg" alt="">
+<img src="recent16.jpg" alt="">
+<img src="recent17.jpg" alt="">
+</div>
+<footer>
+  <div id="container">
+  <div class="company">
+    <h2>Company</h2>
+    <a href="https://www.google.com">About us</a>
+    <a href="https://www.google.com">Careers</a>
+    <p> &copy;ALL RIGHTS RESERVED</p>
+    <a href="https://www.google.com">terms & conditions</a>
+    <a href="https://www.google.com">Privacy Policy</a>
+    <a href=" https://www.google.com">FAQ</a>
+
+
+  </div>
+  <div class="view">
+    <h3>view content in</h3>
+     <p>English</p>
+     <p>Telugu</p>
+     <p>Hindhi</p>
+     <p>Kanada</p>
+  </div>
+  <div class="need">
+    <h3>Need help?</h3>
+    <a href="htttps://www.google.com">Visit help center</a><br>
+    <a href="">Share Feedback</a>
+  </div>
+  <div class="connect">
+    <h3>Connect us</h3>
+    <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+<a href="https://www.twitter.com" class="fa fa-twitter"></a>
+<a href="https://www.google.com" class="fa fa-google"></a>
+  </div>
+  </div>
+
+</footer>
+ 
+</body>
+</html>
