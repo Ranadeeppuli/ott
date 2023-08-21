@@ -2,38 +2,109 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        form{
-            text-align: center;
-            background-color: aqua;
-            color: black;
-        }-*
-        label{
+        
+        .container{
+            height: 600px;
+            width:700px;
+            transform: translate(300px);
+            
+            
+            
+
+            background-image: linear-gradient(purple,blue,lightgreen);
+        }
+        .sub{
+            height:400px;
+            width:230px;
+            border-radius: 10px;
+            background-color: aliceblue;
+            /* margin-left:250px;
+    padding-top: 52px; */
+    transform: translate(250px,90px);
+            
+            box-shadow: 2px,2px,black, solid;
+        }
+        h1{
             text-align: center;
         }
+        h5{
+            margin-left:110px;
+        }
+        .st{
+            background-image: linear-gradient(purple,rgb(162, 162, 219),green);
+            color: black;
+            height: 40px;
+            width: 100px;
+            border-radius: 30px;
+            transform: translate(60px,50px);
+            /* text-align: center; */
+        }
+        a{
+            font-size: 20px;
+
+        }
+        .fa {
+  /* padding: 0px; */
+  font-size: 20px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  /* margin: 5px 2px; */
+  border-radius: 10px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  /* background: #3B5998; */
+  color: rgb(44, 12, 161);
+}
+.social{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(0px,70px);
+
+}
+input{
+    border:none;
+    border-bottom: 1px black solid;
+}   
+b{
+    font-size: 20px;
+    text-align: left; 
+}
     </style>
-</head>
+</head>                                                      
 <body>
-   <form action="sign.html">
-    <fieldset>
-        <legend> sign up page </legend><br>
-    <label for="name">username</label>
-    <input type="text" placeholder="username" required><br>
-    <label for="">Name</label>
+    
+    <div class="container">
+        <div class="sub">
+            <h1>sign up</hl> <br>
+            <b>username</b><br>
+            <input type="alphanumeic" placeholder="username"> <br>
+            <b>password</b><br>
+            <input type="password" placeholder="password">
+            <br>
+            <a href="htpps://www.google.com">forgot password</a>
+            <div class="st">
+            <a href=" sign.html"> signup</a></div>
+            <div class="social">
+            <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+<a href="https://www.twitter.com" class="fa fa-twitter"></a>
+<a href="https://www.google.com" class="fa fa-google"></a>
+</div>
 
-    <input type="text"><br>
-    <label for="">Mobile number</label>
-    <input type="number"><br>
-    <label for="ema">Email id</label>
-    <input type="email" name="ema" id=""><br>
-    <label for="">Password</label>
-    <input type="password"><br>
-    <button type="submit"> signup</button>
-    <button type="reset"> reset</button>
 
-</fieldset>
-   </form> 
+
+            
+        </div>
+    </div>
 </body>
 </html>
